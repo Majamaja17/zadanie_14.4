@@ -1,34 +1,42 @@
 var Movie = React.createClass({
+	propTypes: {
+		movie: React.PropTypes.object.isRequired
+	},
 	render: function() {
-		return React.createElement("li", {key: movie.id},
-	    );
+		return React.createElement("li", {},
+			React.createElement(Movie, {key: movie_id, movie_title, movie_genre},);
 	}
 });
-
-React.createElement(Movie, {key: movie.id});
 
 var MovieTitle = React.createClass({
+	propTypes: {
+		title: React.PropTypes.string.isRequired
+	},
 	render: function() {
-		return React.createElement("h2", {}, movie.title);
+		return React.createElement("h2", {},
+			React.createElement(MovieTitle, {key: movie_title, movie_id, movie_genre},);
 	}
 });
-
-React.createElement(Movie, {key: movie.title});
 
 var MovieDescription = React.createClass({
+	propTypes: {
+		description: React.PropTypes.string.isRequired
+	},
+
 	render: function() {
-		return React.createElement("p", {}, movie.title;
+		return React.createElement("p", {},
+			React.createElement(MovieDescription, {key: movie_description, movie_id, movie_genre},);
 	}
 });
-
-React.createElement(Movie, {key: movie.desc});
-
 
 var MoviesList = React.createClass({
+	propTypes: {
+		list: React.PropTypes.string.isRequired
+	},
 	render: function() {
-		return React.createElement("img",{src: movie.image});
+		return React.createElement( "li", {},
+			React.createElement(MoviesList, {key: movie_genre movie_description, movie_id},);
 	}
 });
 
-React.createElement(Movie, {key: movie.image});
 
